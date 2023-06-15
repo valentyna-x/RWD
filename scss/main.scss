@@ -97,6 +97,11 @@ h2 {
     font-family: Red Hat Display;
     font-size: 48px;
     font-weight: 400;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 h3 {
@@ -122,26 +127,13 @@ p {
     letter-spacing: 5%
 }
 
-@media (max-width: 768px) {
-    .section {
-      height: 300px;
+.blog_flex {
+    padding: 0 10px;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 10px;
     }
-
-    .container {
-      padding: 30px;
-    }
-  }
-
-  @media (max-width: 320px) {
-    .section {
-      height: 200px;
-    }
-
-    .container {
-      padding: 20px;
-    }
-  }
-    
+}
 
 
 
